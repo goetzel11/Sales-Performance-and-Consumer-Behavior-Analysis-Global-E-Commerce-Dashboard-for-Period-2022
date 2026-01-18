@@ -1,0 +1,23 @@
+url = https://www.kaggle.com/datasets/atharvasoundankar/sneakers-and-streetwear-sales-2022
+
+DLL = cur.execute("""CREATE TABLE table_m3 (
+    id SERIAL PRIMARY KEY,
+    "Date" DATE,
+    "Product Name" VARCHAR(100),
+    "Product Type" VARCHAR(100),
+    "Brand" VARCHAR(100),
+    "Gender" VARCHAR(50),
+    "Category" VARCHAR(100),
+    "Country" VARCHAR(100),
+    "Quantity" INTEGER,
+    "Unit Price ($)" DECIMAL,
+    "Amount ($)" DECIMAL,
+    "Payment Mode" VARCHAR(100)
+    )
+""")
+
+DML = DML Insert Data (Python + psycopg2)
+
+From '/Users/aldzahabi/Download/sneakers_streetwear_sales_data.csv'
+DELIMITER ','
+CSV HEADER;
